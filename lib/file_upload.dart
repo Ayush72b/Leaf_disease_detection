@@ -13,7 +13,7 @@ final String query;
   @override
   State<Files> createState() => _FilesState();
 }
-List<XFile>? mediaFileList;
+List<XFile>? mediaFileList = [];
 final ImagePicker _picker = ImagePicker();
 
 class _FilesState extends State<Files> {
