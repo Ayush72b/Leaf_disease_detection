@@ -231,7 +231,7 @@ class _FilesState extends State<Files> {
 }
   
 Future<DiseaseResponse> resultRequest(String type) async {
-  var request = http.MultipartRequest('POST', Uri.parse('http://ec2-3-110-143-116.ap-south-1.compute.amazonaws.com/$type'));
+  var request = http.MultipartRequest('POST', Uri.parse('http://ec2-13-233-255-117.ap-south-1.compute.amazonaws.com:8080/apple'));
 
   // Add images to the request
   for (int i = 0; i < mediaFileList!.length; i++) {
